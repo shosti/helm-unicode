@@ -23,6 +23,8 @@
 
 ;;; Code:
 
+(require 'helm)
+
 (defvar helm-unicode-names nil
   "Internal variable for unicode characters.")
 
@@ -51,6 +53,7 @@
   "Insert CANDIDATE into the main buffer."
   (insert (substring candidate -1)))
 
+;;;###autoload
 (defun helm-unicode (arg)
   "Precofigured `helm' for looking up unicode characters by name.
 
