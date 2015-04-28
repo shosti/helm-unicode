@@ -24,6 +24,7 @@
 ;;; Code:
 
 (require 'helm)
+(require 'helm-utils)
 
 (defvar helm-unicode-names nil
   "Internal variable for unicode characters.")
